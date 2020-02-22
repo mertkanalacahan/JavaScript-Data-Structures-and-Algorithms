@@ -1,8 +1,8 @@
-//array must be sorted
-//if array is not sorted, we are out of luck
-//linear search is the only other option UNLESS
-//we can sort the array first with a complexity
-//better than O(n), which is not quite easy.
+/* array must be sorted
+if array is not sorted, we are out of luck
+linear search is the only other option UNLESS
+we can sort the array first with a complexity
+better than O(n), which is not quite easy. */
 function binarySearch(array, val)
 {
     let start = 0;
