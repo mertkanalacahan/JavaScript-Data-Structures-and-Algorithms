@@ -70,6 +70,7 @@ class SinglyLinkedList
 
     var currentHead = this.head;
     this.head = currentHead.next;
+	currentHead.next = null;
 
     this.length--;
 
@@ -157,6 +158,7 @@ class SinglyLinkedList
     var prevNode = this.get(index - 1);
     var removedNode = prevNode.next;
     prevNode.next = removedNode.next;
+	removedNode.next = null;
     this.length--;
     
     return removedNode;
